@@ -16,6 +16,8 @@ pluginManagement {
 
 plugins {
     // Apply the foojay-resolver plugin to allow automatic download of JDKs
+    // 0.8.0 会在 Gradle 9.x 访问已移除的 JvmVendorSpec.IBM_SEMERU 字段,抛 NoSuchFieldError
+    // 升级到 1.0.0+ 兼容 Gradle 8.10+ / 9.x
     id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
 }
 

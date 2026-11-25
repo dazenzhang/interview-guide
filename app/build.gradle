@@ -98,14 +98,15 @@ dependencies {
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(25)
+        // 用户本地已安装 JDK 26,toolchain 跟随实际环境
+        languageVersion = JavaLanguageVersion.of(26)
     }
 }
 
 // 全局UTF-8编码配置
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
-    options.release = 25
+    options.release = 26
 }
 
 tasks.named('test') {
