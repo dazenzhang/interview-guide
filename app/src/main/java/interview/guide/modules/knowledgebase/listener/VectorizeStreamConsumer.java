@@ -49,7 +49,7 @@ public class VectorizeStreamConsumer extends AbstractStreamConsumer<VectorizeStr
         this.recoveryProperties = recoveryProperties;
     }
 
-    static final class VectorizePayload {
+    public static final class VectorizePayload {
 
         private final Long kbId;
         private String attemptId;

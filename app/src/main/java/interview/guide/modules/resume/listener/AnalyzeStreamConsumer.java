@@ -47,7 +47,7 @@ public class AnalyzeStreamConsumer extends AbstractStreamConsumer<AnalyzeStreamC
         this.parseService = parseService;
     }
 
-    static final class AnalyzePayload {
+    public static final class AnalyzePayload {
 
         private final Long resumeId;
         private String attemptId;

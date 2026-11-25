@@ -36,7 +36,7 @@ public class VoiceEvaluateStreamConsumer extends AbstractStreamConsumer<VoiceEva
         this.sessionRepository = sessionRepository;
     }
 
-    record VoiceEvaluatePayload(Long sessionId) {}
+    public record VoiceEvaluatePayload(Long sessionId) {}
 
     @Override
     protected String taskDisplayName() {

@@ -22,7 +22,7 @@ public class AnalyzeStreamProducer extends AbstractStreamProducer<AnalyzeStreamP
     private final ResumeRepository resumeRepository;
     private final TransactionalExecutor transactionalExecutor;
 
-    record AnalyzeTaskPayload(Long resumeId) {}
+    public record AnalyzeTaskPayload(Long resumeId) {}
 
     public AnalyzeStreamProducer(
         RedisService redisService,

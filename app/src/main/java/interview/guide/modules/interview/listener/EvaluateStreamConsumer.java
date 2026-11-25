@@ -53,7 +53,7 @@ public class EvaluateStreamConsumer extends AbstractStreamConsumer<EvaluateStrea
         this.llmProviderRegistry = llmProviderRegistry;
     }
 
-    record EvaluatePayload(String sessionId) {}
+    public record EvaluatePayload(String sessionId) {}
 
     @Override
     protected String taskDisplayName() {

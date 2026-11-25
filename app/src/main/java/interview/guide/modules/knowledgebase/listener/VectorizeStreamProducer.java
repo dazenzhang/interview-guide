@@ -20,7 +20,7 @@ public class VectorizeStreamProducer extends AbstractStreamProducer<VectorizeStr
 
     private final KnowledgeBaseRepository knowledgeBaseRepository;
 
-    record VectorizeTaskPayload(Long kbId) {}
+    public record VectorizeTaskPayload(Long kbId) {}
 
     public VectorizeStreamProducer(RedisService redisService, KnowledgeBaseRepository knowledgeBaseRepository) {
         super(redisService);
