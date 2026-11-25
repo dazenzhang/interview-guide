@@ -11,6 +11,13 @@ build
 # Environment variables
 .env
 test-output.txt
+
+# 本机 JDK 路径等机器相关配置
+gradle.properties
+
+# JVM 崩溃日志
+hs_err_pid*.log
+replay_pid*.log
 # IDEA code analysis
 qodana.yaml
 
